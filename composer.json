@@ -1,0 +1,39 @@
+{
+	"name": "driehle/php-crypt-md5",
+	"type": "library",
+	"description": "A pure PHP implementation of an MD5-hashsum-based implementation of the crypt routine, which can be used to generate hashs for Apache's passwd files",
+	"keywords": [
+		"Crypt",
+		"MD5",
+		"Apache",
+		"passwd",
+		"htaccess"
+	],
+	"homepage": "https://github.com/driehle/php-crypt-md5",
+	"license": [
+		"GPL-3.0+",
+		"LGPL-3.0+"
+	],
+	"author": [
+		{
+			"name": "Dennis Riehle",
+			"role": "Developer"
+		}
+	],
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*"
+	},
+	"require": {
+		"php": ">=5.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"Md5Crypt\\": "library/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "2.0-dev"
+		}
+	}
+}
