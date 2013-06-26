@@ -34,6 +34,7 @@ Authors
 
  * Dennis Riehle <selfhtml@riehle-web.com>
  * Fabian Steiner <info@fabis-site.net> (thanks for bugfixing!)
+ * Jörg Reinholz <http://www.fastix.de/> (thanks for bugfixing!)
 
 Other implementations this one is based on:
 
@@ -45,5 +46,5 @@ Other implementations this one is based on:
 Version
 -------
 
-Version:   1.0 stable
-Last edit: Tue, 13 September 2005 13:49:28 GMT
+Version:   1.0.1 stable
+Last edit: Sat, 09 January 2010 11:01:14 GMT

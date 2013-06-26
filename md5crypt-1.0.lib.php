@@ -18,10 +18,10 @@ Based on
 Many thanks to
 
    - Fabian Steiner <info@fabis-site.net>
-     without him this script would not work!!
+   - Jörg Reinholz <http://www.fastix.de/>
 
-Version:   1.0 stable
-Last edit: Tue, 13 September 2005 13:49:28 GMT
+Version:   1.0.1 stable
+Last edit: Sat, 09 January 2010 11:01:14 GMT
 
 
 USAGE
@@ -83,7 +83,7 @@ function md5crypt_unix($pw, $salt = NULL, $Magic = '$1$') {
     	mt_srand((double)(microtime() * 10000000));
     	
     	while(strlen($salt) < 8) {
-    		$salt .= $itoa64{mt_rand(0, strlen($itoa64))};
+    		$salt .= $itoa64{mt_rand(0, strlen($itoa64)-1)};
     	}
     }
     
