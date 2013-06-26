@@ -26,9 +26,10 @@ apache_md5_crypt() provides a function compatible with Apache's
 Usage
 -----
 
-  $cryptedpassword = md5crypt_unix   ($password [, $salt [, $magicstring ]);
-  $apachepassword  = md5crypt_apache ($password [, $salt]);
-
+```
+$cryptedpassword = Md5Crypt::unix   ($password [, $salt [, $magicstring ]);
+$apachepassword  = Md5Crypt::apache ($password [, $salt]);
+```
 
 
 Authors
@@ -43,10 +44,3 @@ Other implementations this one is based on:
  * perl's Crypt::PasswdMD5 by Luis Munoz (lem@cantv.net)
  * phyton's md5crypt.py by Michal Wallace http://www.sabren.com/
  * /usr/src/libcrypt/crypt.c from FreeBSD 2.2.5-RELEASE
-
-
-Version
--------
-
-Version:   1.0.1 stable
-Last edit: Sat, 09 January 2010 11:01:14 GMT
