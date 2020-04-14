@@ -2,7 +2,7 @@
 
 use Md5Crypt\Md5Crypt;
 
-class Md5CryptTest extends PHPUnit_Framework_TestCase
+class Md5CryptTest extends \PHPUnit\Framework\TestCase
 {
 	public function testCryptApache()
 	{
