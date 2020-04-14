@@ -23,8 +23,18 @@ contains the following license in it:
 	this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
 
 apache_md5_crypt() provides a function compatible with Apache's
-.htpasswd files. This was contributed by Bryan Hart <bryan@eai.com>.
+.htpasswd files. This was contributed by Bryan Hart (<bryan@eai.com>).
 
+Installation
+-----
+
+The latest version of this package can be installed via Composer:
+
+```
+composer require driehle/php-crypt-md5
+```
+
+All available versions can be found under <https://packagist.org/packages/driehle/php-crypt-md5>.
 
 Usage
 -----
@@ -38,7 +48,7 @@ $apachepassword  = Md5Crypt::apache ($password [, $salt]);
 Authors
 -------
 
- * Dennis Riehle <selfhtml@riehle-web.com>
+ * Dennis Riehle <spam@dennisriehle.de>
  * Fabian Steiner <info@fabis-site.net> (thanks for bugfixing!)
  * Jörg Reinholz <http://www.fastix.de/> (thanks for bugfixing!)
 
