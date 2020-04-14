@@ -86,7 +86,7 @@ class Md5Crypt
 			mt_srand((double)(microtime() * 10000000));
 			
 			while(strlen($salt) < 8) {
-				$salt .= $itoa64{mt_rand(0, strlen($itoa64)-1)};
+				$salt .= $itoa64[mt_rand(0, strlen($itoa64)-1)];
 			}
 		}
 		
@@ -103,7 +103,7 @@ class Md5Crypt
 			if($i & 1) {				// This comes from the original version,
 				$ctx .= pack("C", 0);   // where a memset() is done to $final
 			} else {					// before this loop
-				$ctx .= $pw{0};
+				$ctx .= $pw[0];
 			}
 		}
 		
