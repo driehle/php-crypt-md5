@@ -18,7 +18,7 @@ Based on
 Many thanks to
 
    - Fabian Steiner <info@fabis-site.net>
-   - Jörg Reinholz <http://www.fastix.de/>
+   - Jï¿½rg Reinholz <http://www.fastix.de/>
 
 USAGE
 
@@ -55,9 +55,10 @@ class Md5Crypt
 		$ret = '';
 		
 		while(--$n >= 0) {
-			$ret .= $itoa64{$v & 0x3f};   
+			$ret .= $itoa64[$v & 0x3f];
 			$v = $v >> 6;
 		}
+
 		return $ret;
 	}
 	
@@ -132,22 +133,22 @@ class Md5Crypt
 		
 		// Final xform
 		$passwd = '';
-		$passwd .= self::to64((intval(ord($final{0})) << 16)
-						|(intval(ord($final{6})) << 8)
-						|(intval(ord($final{12}))),4);
-		$passwd .= self::to64((intval(ord($final{1})) << 16)
-						|(intval(ord($final{7})) << 8)
-						|(intval(ord($final{13}))), 4);
-		$passwd .= self::to64((intval(ord($final{2})) << 16)
-						|(intval(ord($final{8})) << 8)
-						|(intval(ord($final{14}))), 4);
-		$passwd .= self::to64((intval(ord($final{3})) << 16)
-						|(intval(ord($final{9})) << 8)
-						|(intval(ord($final{15}))), 4);
-		$passwd .= self::to64((intval(ord($final{4}) << 16)
-						|(intval(ord($final{10})) << 8)
-						|(intval(ord($final{5})))), 4);
-		$passwd .= self::to64((intval(ord($final{11}))), 2);
+		$passwd .= self::to64((intval(ord($final[0])) << 16)
+						|(intval(ord($final[6])) << 8)
+						|(intval(ord($final[12]))),4);
+		$passwd .= self::to64((intval(ord($final[1])) << 16)
+						|(intval(ord($final[7])) << 8)
+						|(intval(ord($final[13]))), 4);
+		$passwd .= self::to64((intval(ord($final[2])) << 16)
+						|(intval(ord($final[8])) << 8)
+						|(intval(ord($final[14]))), 4);
+		$passwd .= self::to64((intval(ord($final[3])) << 16)
+						|(intval(ord($final[9])) << 8)
+						|(intval(ord($final[15]))), 4);
+		$passwd .= self::to64((intval(ord($final[4]) << 16)
+						|(intval(ord($final[10])) << 8)
+						|(intval(ord($final[5])))), 4);
+		$passwd .= self::to64((intval(ord($final[11]))), 2);
 		
 		// Return the final string
 		return $Magic . $salt . '$' . $passwd;
