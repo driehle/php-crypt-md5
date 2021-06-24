@@ -3,7 +3,7 @@ PHP crypt-md5
 
 A pure PHP implementation of an MD5-hashsum-based implementation of the crypt routine, which can be used to generate hashs for Apache's passwd files.
 
-[![Build Status](https://travis-ci.org/driehle/php-crypt-md5.png)](https://travis-ci.org/driehle/php-crypt-md5)
+[![Build Status](https://github.com/driehle/php-crypt-md5/workflows/Continuous%20Integration/badge.svg)](https://github.com/driehle/php-crypt-md5/actions?query=workflow%3A"Continuous+Integration")
 [![Latest Stable Version](https://poser.pugx.org/driehle/php-crypt-md5/v/stable)](https://packagist.org/packages/driehle/php-crypt-md5) 
 [![Total Downloads](https://poser.pugx.org/driehle/php-crypt-md5/downloads)](https://packagist.org/packages/driehle/php-crypt-md5) 
 [![Latest Unstable Version](https://poser.pugx.org/driehle/php-crypt-md5/v/unstable)](https://packagist.org/packages/driehle/php-crypt-md5) 
