@@ -26,7 +26,7 @@
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.13",
 		"friendsofphp/php-cs-fixer": "^3.0",
-		"phpunit/phpunit": "^9.5"
+		"phpunit/phpunit": "^8.5"
 	},
 	"extra": {
 		"branch-alias": {
