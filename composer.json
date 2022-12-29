@@ -21,7 +21,7 @@
 		}
 	],
 	"require": {
-		"php": "^7.3 || ~8.0.0 || ~8.1.0"
+		"php": ">=7.4 <8.3"
 	},
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.18.0",
@@ -42,5 +42,10 @@
 		"cs-check": "php-cs-fixer fix --dry-run --verbose",
 		"cs-fix": "php-cs-fixer fix --verbose",
 		"test": "phpunit"
+	},
+	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true
+		}
 	}
 }
