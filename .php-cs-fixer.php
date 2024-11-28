@@ -5,7 +5,7 @@ $finder = (new PhpCsFixer\Finder())
     ->name('*.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
-    ->in(__DIR__ . '/library/')
+    ->in(__DIR__ . '/src/')
     ->in(__DIR__ . '/tests/');
 
 return (new PhpCsFixer\Config())
@@ -15,7 +15,9 @@ return (new PhpCsFixer\Config())
         '@PSR2' => true,
         '@Symfony' => true,
         '@DoctrineAnnotation' => true,
-        '@PHP74Migration' => true,
+	'@PHP74Migration' => true,
+	'@PHP80Migration' => true,
+	'@PHP81Migration' => true,
         'align_multiline_comment' => ['comment_type' => 'phpdocs_like'],
         'concat_space' => ['spacing' => 'one'],
         'echo_tag_syntax' => ['format' => 'long'],
