@@ -83,7 +83,7 @@ class Md5Crypt
             $salt = substr($parts[0], 0, 8);
         } else {
             $salt = '';
-            mt_srand((float) (microtime() * 10000000));
+            mt_srand((float) (microtime(true) * 10000000));
 
             while (strlen($salt) < 8) {
                 $salt .= $itoa64[mt_rand(0, strlen($itoa64) - 1)];
